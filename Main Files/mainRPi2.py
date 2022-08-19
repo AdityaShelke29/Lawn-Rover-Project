@@ -8,9 +8,12 @@
 # Every second, using the serial and pyubx2 libararies, the current longitude, latitude, and accuracy estimate
 # of the longitude and latitude values are transmitted to the Raspberry Pi and this program. This receiving function
 # is handled by the thread "thread1," and is called getCoordinates. The current coordinates of the robot at any given
-# time are stored in the object data in the class RobotLocation.
+# time are stored in the object "data" in the class RobotLocation.
 
-# The other thread, "thread2," handles actual movement of the robot.
+# The other thread, "thread2," handles actual movement of the robot. It uses the values stored in the object "data"
+# to control where the robot should move. If the robot's accuracy estimate is greater than 6 cm, the robot will not move.
+# If the accuracy is less than 6 cm, the robot will move forward if the within function returns true.
+# If the accuracy is less than 6 cm, and the within function returns false, the robot will turn around.
 
 # Importing Libraries for GPS Navigation
 import serial

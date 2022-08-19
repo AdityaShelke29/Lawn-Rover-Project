@@ -1,3 +1,5 @@
+# This additional function checks if a given point is within 4 points using the shapely.geometry library.
+
 # Importing Libraries for GPS Navigation
 import serial
 from pyubx2 import UBXReader

@@ -1,3 +1,6 @@
+# This is an additional function that calculates the distance between two points on earth given
+# those points latitude and longitude. This function was not designed by me.
+
 # Python 3 program to calculate Distance Between Two Points on Earth
 from math import radians, cos, sin, asin, sqrt
 def distance(lat1, lat2, lon1, lon2):
@@ -22,7 +25,6 @@ def distance(lat1, lat2, lon1, lon2):
     # calculate the result
     return(c * r)
      
-print("snaek")
 # driver code
 lat1 = 53.32055555555556
 lat2 = 53.31861111111111

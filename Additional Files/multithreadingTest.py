@@ -1,3 +1,6 @@
+# This additional function is a test of multithreading in Python.
+# It bears no relevance to the project other than the testing of multithreading.
+
 import time
 from time import sleep
 import threading

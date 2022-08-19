@@ -1,0 +1,10 @@
+### LawnLab Automatic Lawn Fertilizer Robot Project
+
+The LawnLab Robot is a robot that uses a GPS RTK Positioning system to traverse and dispense fertilizer throughout a certain area.
+The system has two parts: the moving robot and a base station. 
+- The base station provides RTK corrections that allow the cooordiantes of the robot to be determined to 2 cm of accuracy.
+- The moving robot dispenses fertilizer, and contains a container and enough capacity for 12 pounds of fertilizer.
+
+**Base Station Components:** Battery, SparkFun GPS-RTK2 Board (ZED-F9P), GNSS Multi-Band L1/L2 Helical Antenna (SMA) BT-560, 1x HolyBro Telemetry Radio V3
+
+**Moving Robot Components:** Battery, Raspberry Pi, 2 goBILDA Motors, 2 Servos, PVC Piping for Frame, SparkFun GPS-RTK2 Board (ZED-F9P), 1x HolyBro Telemetry Radio V3, GPS/GNSS Magnetic Mount Antenna - 3m (SMA)
