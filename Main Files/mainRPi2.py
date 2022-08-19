@@ -1,3 +1,17 @@
+# This is a file controlling robot movement using a boundary system.
+# Basically, 4 points with latitude and longitude are inputted into the system.
+# These are lat1, long1, lat2, long2, lat3, long3, lat4, long4.
+
+# The library shapely.geometry uses these four points to create a polygon.
+# The within function of this library tells if a certain point is within the polygon or not.
+
+# Every second, using the serial and pyubx2 libararies, the current longitude, latitude, and accuracy estimate
+# of the longitude and latitude values are transmitted to the Raspberry Pi and this program. This receiving function
+# is handled by the thread "thread1," and is called getCoordinates. The current coordinates of the robot at any given
+# time are stored in the object data in the class RobotLocation.
+
+# The other thread, "thread2," handles actual movement of the robot.
+
 # Importing Libraries for GPS Navigation
 import serial
 from pyubx2 import UBXReader

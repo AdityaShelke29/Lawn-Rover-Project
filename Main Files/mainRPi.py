@@ -1,3 +1,7 @@
+# This is an outdated file that would have been run on the Raspberry Pi.
+# The new version of this file is located at mainRPi2.py
+# The description of the file is located there as well.
+
 # Importing Libraries for GPS Navigation
 import serial
 from pyubx2 import UBXReader
